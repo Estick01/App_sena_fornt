@@ -21,7 +21,7 @@ export class CompanyComponent implements OnInit {
   }
 
   getCompanyLogoCSS(activationCompanyUser: ActivationCompanyUserModel) {
-    return `background-image: url(${activationCompanyUser.company.rutaLogoUrl})`;
+    return activationCompanyUser.company.rutaLogoUrl;
   }
 
   selectCompany(activationCompanyUser: ActivationCompanyUserModel) {
